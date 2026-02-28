@@ -122,7 +122,7 @@ This project is open source under the [MIT License](LICENSE).
 
 <div align="center">
 
-**Made with ❤️ by [Aryan Mishra](https://github.com/Aryanmishra-dev)**
+
 
 *Keep building. Keep learning.*
 

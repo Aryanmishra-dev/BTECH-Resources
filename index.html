@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B.Tech Journey — Data Science 2023–2027 | Aryan Mishra</title>
+
+<!-- SEO -->
+<meta name="description" content="Comprehensive B.Tech Data Science academic journey at RGPV Bhopal (2023-2027). 28 subjects across 6 semesters covering ML, Deep Learning, NLP, Big Data, and Python frameworks.">
+<meta name="keywords" content="BTech, Data Science, RGPV, Machine Learning, Deep Learning, NLP, Python, Academic Journey, Computer Science">
+<meta name="author" content="Aryan Mishra">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="B.Tech Data Science Journey — Aryan Mishra">
+<meta property="og:description" content="6 semesters of rigorous academics spanning mathematics, ML, deep learning, and data engineering — documented in one place.">
+<meta property="og:url" content="https://aryanmishra-dev.github.io/BTech-Subjects-/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="B.Tech Data Science Journey — Aryan Mishra">
+<meta name="twitter:description" content="28 subjects, 140 units across 6 semesters of B.Tech Data Science at RGPV.">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════
+   60-30-10 COLOR SYSTEM
+   60% → #0D1117  (deep navy — backgrounds, cards)
+   30% → #E8EDF8  (near-white — all readable text)
+   10% → #F5A623  (amber gold — accents, highlights)
+═══════════════════════════════════════════════ */
+
+:root {
+  --bg:          #0D1117;
+  --bg-raised:   #161B22;
+  --bg-card:     #1C2128;
+  --bg-hover:    #21262D;
+  --border:      #30363D;
+  --border-soft: #21262D;
+
+  --text-primary:   #E8EDF8;
+  --text-secondary: #B0BAD0;
+  --text-tertiary:  #6B7A96;
+
+  --accent:       #F5A623;
+  --accent-dim:   rgba(245,166,35,0.15);
+
+  --s1: #4D9EFF;
+  --s2: #FF6B6B;
+  --s3: #4ECDC4;
+  --s4: #A78BFA;
+  --s5: #F97316;
+  --s6: #34D399;
+
+  --radius: 8px;
+  --transition: 200ms cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: radial-gradient(circle, #30363D 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: -200px; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 400px;
+  background: radial-gradient(ellipse, rgba(245,166,35,0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── SKIP LINK (Accessibility) ── */
+.skip-link {
+  position: absolute; top: -100%; left: 16px;
+  background: var(--accent); color: var(--bg);
+  padding: 8px 16px; border-radius: var(--radius);
+  font-weight: 600; font-size: 14px;
+  z-index: 9999; text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 8px; }
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── TOP NAV ── */
+.topnav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(13,17,23,0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.topnav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  height: 56px; display: flex; align-items: center; justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px; font-weight: 700;
+  color: var(--text-primary); letter-spacing: 0.5px;
+}
+.nav-brand span { color: var(--accent); }
+
+.nav-right { display: flex; align-items: center; gap: 12px; }
+
+.nav-pills {
+  display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none;
+}
+.nav-pills::-webkit-scrollbar { display: none; }
+
+.nav-pill {
+  background: transparent; border: none;
+  color: var(--text-tertiary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-weight: 500;
+  padding: 5px 14px; border-radius: 20px;
+  cursor: pointer; transition: var(--transition); white-space: nowrap;
+}
+.nav-pill:hover { color: var(--text-secondary); background: var(--bg-hover); }
+.nav-pill.active { color: var(--accent); background: var(--accent-dim); font-weight: 600; }
+.nav-pill:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── SEARCH ── */
+.search-wrap {
+  position: relative;
+  display: flex; align-items: center;
+}
+.search-icon {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  color: var(--text-tertiary); font-size: 13px; pointer-events: none;
+}
+.search-input {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px; padding: 6px 12px 6px 32px;
+  border-radius: 20px; width: 180px;
+  transition: var(--transition);
+  outline: none;
+}
+.search-input::placeholder { color: var(--text-tertiary); }
+.search-input:focus {
+  border-color: var(--accent);
+  width: 240px;
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+.search-clear {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; color: var(--text-tertiary);
+  cursor: pointer; font-size: 14px; display: none; padding: 2px;
+  line-height: 1;
+}
+.search-clear.visible { display: block; }
+.search-kbd {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  font-size: 10px; color: var(--text-tertiary);
+  background: var(--bg-hover); border: 1px solid var(--border);
+  padding: 1px 6px; border-radius: 4px; pointer-events: none;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity var(--transition);
+}
+.search-kbd.hidden { opacity: 0; }
+.search-no-results {
+  text-align: center; padding: 48px 20px;
+  color: var(--text-tertiary); font-size: 15px;
+  display: none;
+}
+.search-no-results.visible { display: block; }
+
+/* ── HERO ── */
+.hero {
+  padding: 72px 0 56px;
+}
+
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: ''; width: 24px; height: 2px;
+  background: var(--accent); display: block;
+}
+
+.hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+  font-weight: 800; line-height: 1.08;
+  color: var(--text-primary);
+  letter-spacing: -1px; margin-bottom: 20px;
+}
+.hero h1 em { font-style: normal; color: var(--accent); }
+
+.hero-desc {
+  font-size: 16px; font-weight: 300;
+  color: var(--text-secondary);
+  max-width: 540px; line-height: 1.7; margin-bottom: 40px;
+}
+
+.hero-tags { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.hero-tag {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px; font-weight: 400;
+  padding: 7px 16px; border-radius: var(--radius);
+}
+
+/* ── STATS ── */
+.stats-row {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 16px; margin-bottom: 56px;
+}
+
+.stat-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px 24px;
+  transition: var(--transition);
+}
+.stat-card:hover { border-color: var(--accent); background: var(--bg-hover); }
+
+.stat-number {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.2rem; font-weight: 800;
+  color: var(--text-primary); line-height: 1; margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 12px; font-weight: 400;
+  color: var(--text-tertiary);
+  text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* ── PROGRESS ── */
+.progress-block {
+  background: var(--bg-raised); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 24px 28px;
+  margin-bottom: 52px;
+}
+
+.progress-top {
+  display: flex; align-items: center;
+  justify-content: space-between; margin-bottom: 16px;
+}
+
+.progress-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px; font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase; letter-spacing: 2px;
+}
+
+.progress-pct {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px; font-weight: 700; color: var(--accent);
+}
+
+.progress-segs {
+  display: flex; gap: 4px; height: 8px;
+  border-radius: 4px; overflow: hidden; margin-bottom: 10px;
+}
+
+.pseg { flex: 1; border-radius: 2px; transition: var(--transition); }
+.pseg.done { opacity: 1; }
+.pseg.current { animation: breathe 2.5s ease infinite; }
+.pseg.future { background: var(--border) !important; }
+
+@keyframes breathe {
+  0%,100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+
+.progress-labels { display: flex; gap: 4px; }
+.progress-labels span {
+  flex: 1; text-align: center;
+  font-size: 10px; font-weight: 500;
+  color: var(--text-tertiary); letter-spacing: 0.5px;
+}
+.progress-labels span.active-label { color: var(--accent); font-weight: 700; }
+
+/* ── PYTHON SKILLS SECTION ── */
+.skills-section {
+  margin-bottom: 56px;
+}
+.skills-section-header {
+  margin-bottom: 24px;
+}
+.skills-section-header h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--text-tertiary); margin-bottom: 6px;
+}
+.skills-section-header p { font-size: 15px; color: var(--text-secondary); }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.skill-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 20px;
+  transition: var(--transition); display: flex;
+  align-items: center; gap: 14px;
+}
+.skill-card:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.skill-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+  background: var(--bg-raised); border: 1px solid var(--border-soft);
+}
+
+.skill-info { flex: 1; min-width: 0; }
+
+.skill-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px; font-weight: 700;
+  color: var(--text-primary); line-height: 1.3;
+}
+
+.skill-desc {
+  font-size: 11px; color: var(--text-tertiary);
+  margin-top: 2px; line-height: 1.4;
+}
+
+.skill-tag {
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 10px;
+  flex-shrink: 0;
+}
+.skill-tag.core {
+  background: rgba(245,166,35,0.12); color: var(--accent);
+}
+.skill-tag.framework {
+  background: rgba(77,158,255,0.12); color: var(--s1);
+}
+.skill-tag.lib {
+  background: rgba(78,205,196,0.12); color: var(--s3);
+}
+
+/* ── SECTION HEADER ── */
+.section-header {
+  margin-bottom: 28px;
+}
+.section-header-row {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16px; flex-wrap: wrap;
+}
+.section-header h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--text-tertiary); margin-bottom: 6px;
+}
+.section-header p { font-size: 15px; color: var(--text-secondary); }
+
+.expand-all-btn {
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-weight: 500;
+  padding: 6px 16px; border-radius: 20px;
+  cursor: pointer; transition: var(--transition);
+  white-space: nowrap;
+}
+.expand-all-btn:hover {
+  background: var(--bg-hover); border-color: var(--accent);
+  color: var(--accent);
+}
+.expand-all-btn:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+
+/* ── SEMESTER BLOCK ── */
+.semester-block {
+  margin-bottom: 60px;
+}
+.semester-block.hidden { display: none; }
+
+.sem-row {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 22px; padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.sem-index {
+  font-family: 'Syne', sans-serif;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--text-tertiary); min-width: 44px;
+}
+
+.sem-line {
+  width: 3px; height: 36px; border-radius: 2px; flex-shrink: 0;
+}
+
+.sem-info { flex: 1; }
+
+.sem-info h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 21px; font-weight: 800;
+  color: var(--text-primary); line-height: 1.2; letter-spacing: -0.3px;
+}
+
+.sem-meta {
+  font-size: 13px; color: var(--text-tertiary);
+  margin-top: 3px; font-weight: 400;
+}
+
+.sem-status {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 5px 13px; border-radius: 20px;
+}
+.sem-status.complete {
+  background: rgba(74,205,132,0.1); color: #4ACD84;
+  border: 1px solid rgba(74,205,132,0.25);
+}
+.sem-status.current {
+  background: var(--accent-dim); color: var(--accent);
+  border: 1px solid rgba(245,166,35,0.3);
+}
+
+/* ── GRID & CARDS ── */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+  gap: 14px;
+}
+
+.subject-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  cursor: pointer; transition: var(--transition); position: relative;
+}
+.subject-card:hover {
+  background: var(--bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  border-color: var(--card-accent, var(--accent));
+}
+.subject-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.subject-card.expanded {
+  border-color: var(--card-accent, var(--accent));
+}
+.subject-card.search-hidden {
+  display: none;
+}
+.subject-card.search-highlight {
+  box-shadow: 0 0 0 2px var(--accent), 0 8px 28px rgba(0,0,0,0.35);
+}
+
+.card-accent-bar {
+  height: 3px; width: 100%;
+  background: var(--card-accent, var(--accent));
+  opacity: 0; transition: opacity var(--transition);
+}
+.subject-card:hover .card-accent-bar,
+.subject-card.expanded .card-accent-bar { opacity: 1; }
+
+.card-body { padding: 20px 22px 16px; }
+
+.card-header {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 12px; margin-bottom: 10px;
+}
+
+.card-icon-wrap {
+  width: 38px; height: 38px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 19px; flex-shrink: 0;
+  background: var(--bg-raised); border: 1px solid var(--border-soft);
+}
+
+.card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px; font-weight: 700;
+  color: var(--text-primary); line-height: 1.4; flex: 1;
+}
+
+.card-units-count {
+  font-size: 12px; font-weight: 400;
+  color: var(--text-tertiary); margin-bottom: 14px;
+}
+
+.expand-row {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600;
+  color: var(--text-tertiary); letter-spacing: 0.5px;
+  text-transform: uppercase; transition: color var(--transition);
+  border-top: 1px solid var(--border-soft); padding-top: 13px;
+}
+.chevron { display: inline-block; transition: transform var(--transition); }
+.subject-card.expanded .chevron { transform: rotate(180deg); }
+.subject-card:hover .expand-row { color: var(--text-secondary); }
+.subject-card.expanded .expand-row { color: var(--accent); }
+
+/* ── UNITS ── */
+.units-list {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1),
+              padding 0.35s cubic-bezier(0.4,0,0.2,1);
+  padding: 0 22px;
+}
+.units-list.open {
+  max-height: 600px;
+  padding: 0 22px 20px;
+}
+
+.unit-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 11px 0; border-bottom: 1px solid var(--border-soft);
+}
+.unit-item:last-child { border-bottom: none; }
+
+.unit-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--card-accent, var(--accent));
+  flex-shrink: 0; margin-top: 8px; opacity: 0.8;
+}
+
+.unit-label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--text-tertiary); margin-bottom: 2px;
+}
+
+.unit-text {
+  font-size: 13px; font-weight: 400;
+  color: var(--text-secondary); line-height: 1.55;
+}
+
+/* ── BACK TO TOP ── */
+.back-to-top {
+  position: fixed; bottom: 28px; right: 28px;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--accent); color: var(--bg);
+  border: none; cursor: pointer;
+  font-size: 20px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 16px rgba(245,166,35,0.4);
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 99; pointer-events: none;
+}
+.back-to-top.visible {
+  opacity: 1; transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(245,166,35,0.5);
+}
+.back-to-top:focus-visible {
+  outline: 2px solid var(--text-primary); outline-offset: 2px;
+}
+
+/* ── FOOTER ── */
+.footer {
+  position: relative; z-index: 1;
+  border-top: 1px solid var(--border-soft);
+  padding: 36px 0;
+}
+.footer-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer p {
+  font-size: 13px; color: var(--text-tertiary);
+  font-weight: 400;
+}
+.footer strong { color: var(--accent); font-weight: 600; }
+
+.footer-links {
+  display: flex; gap: 16px;
+}
+.footer-link {
+  font-size: 13px; color: var(--text-tertiary);
+  text-decoration: none; transition: color var(--transition);
+}
+.footer-link:hover { color: var(--accent); }
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1),
+              transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal.visible {
+  opacity: 1; transform: translateY(0);
+}
+
+/* ── FOCUS VISIBLE ── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .wrapper { padding: 0 16px; }
+  .topnav-inner {
+    padding: 0 16px; flex-wrap: wrap;
+    height: auto; padding-top: 10px; padding-bottom: 10px; gap: 8px;
+  }
+  .nav-right { width: 100%; overflow-x: auto; }
+  .hero { padding: 48px 0 36px; }
+  .hero h1 { font-size: 2.4rem; }
+  .subjects-grid { grid-template-columns: 1fr; }
+  .stats-row { grid-template-columns: repeat(2,1fr); }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .search-input { width: 140px; }
+  .search-input:focus { width: 180px; }
+  .search-kbd { display: none; }
+  .section-header-row { flex-direction: column; align-items: flex-start; }
+  .footer-inner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .skills-grid { grid-template-columns: 1fr; }
+  .stats-row { grid-template-columns: 1fr; }
+}
+
+/* ── PRINT ── */
+@media print {
+  body::before, body::after, .topnav, .back-to-top,
+  .expand-row, .search-wrap, .expand-all-btn,
+  .nav-pills, .search-kbd { display: none !important; }
+  body { background: #fff; color: #000; }
+  .wrapper { max-width: 100%; padding: 0; }
+  .subject-card { break-inside: avoid; border: 1px solid #ccc; }
+  .units-list { max-height: none !important; padding: 0 22px 20px !important; }
+  .stat-card, .progress-block, .skill-card { border: 1px solid #ccc; }
+  .hero { padding: 20px 0; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  * { color: #000 !important; background: transparent !important; }
+  .card-accent-bar { opacity: 1 !important; background: #999 !important; height: 2px !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- Skip to content (Accessibility) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Navigation -->
+<nav class="topnav" role="navigation" aria-label="Main navigation">
+  <div class="topnav-inner">
+    <div class="nav-brand" aria-label="B.Tech Journey home">B.Tech <span>Journey</span></div>
+    <div class="nav-right">
+      <div class="nav-pills" role="tablist" aria-label="Semester filter">
+        <button class="nav-pill active" role="tab" aria-selected="true" data-sem="all">All</button>
+        <button class="nav-pill" role="tab" aria-selected="false" data-sem="1">Sem 1</button>
+        <button class="nav-pill" role="tab" aria-selected="false" data-sem="2">Sem 2</button>
+        <button class="nav-pill" role="tab" aria-selected="false" data-sem="3">Sem 3</button>
+        <button class="nav-pill" role="tab" aria-selected="false" data-sem="4">Sem 4</button>
+        <button class="nav-pill" role="tab" aria-selected="false" data-sem="5">Sem 5</button>
+        <button class="nav-pill" role="tab" aria-selected="false" data-sem="6">Sem 6 &larr; Now</button>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon" aria-hidden="true">&#x1F50D;</span>
+        <input type="search" class="search-input" id="searchInput"
+               placeholder="Search subjects…" aria-label="Search subjects"
+               autocomplete="off" spellcheck="false">
+        <span class="search-kbd" id="searchKbd">&#8984;K</span>
+        <button class="search-clear" id="searchClear" aria-label="Clear search">&times;</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+<div class="wrapper">
+
+  <!-- Hero -->
+  <section class="hero reveal" aria-labelledby="hero-heading">
+    <div class="hero-eyebrow">RGPV &middot; Data Science &middot; 2023&ndash;2027</div>
+    <h1 id="hero-heading">My B.Tech<br><em>Academic Journey</em></h1>
+    <p class="hero-desc">6 semesters of rigorous academics spanning mathematics, programming, machine learning, and data engineering &mdash; all documented in one place.</p>
+    <div class="hero-tags" aria-label="Quick info">
+      <span class="hero-tag">&#128205; RGPV Bhopal</span>
+      <span class="hero-tag">&#128197; Batch 2023&ndash;2027</span>
+      <span class="hero-tag">&#127891; B.Tech Data Science</span>
+      <span class="hero-tag">&#128214; 6th Semester Active</span>
+    </div>
+  </section>
+
+  <!-- Stats (counters animate on scroll) -->
+  <section class="stats-row reveal" aria-label="Academic statistics">
+    <div class="stat-card">
+      <div class="stat-number" id="stat-semesters">0</div>
+      <div class="stat-label">Semesters Complete</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="stat-subjects">0</div>
+      <div class="stat-label">Total Subjects</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="stat-units">0</div>
+      <div class="stat-label">Units Covered</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="stat-progress">0%</div>
+      <div class="stat-label">Journey Complete</div>
+    </div>
+  </section>
+
+  <!-- Progress -->
+  <section class="progress-block reveal" aria-label="Semester progress">
+    <div class="progress-top">
+      <div class="progress-title">Semester Progress</div>
+      <div class="progress-pct">6 of 8 Semesters</div>
+    </div>
+    <div class="progress-segs" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="75 percent complete">
+      <div class="pseg done"    style="background:var(--s1)"></div>
+      <div class="pseg done"    style="background:var(--s2)"></div>
+      <div class="pseg done"    style="background:var(--s3)"></div>
+      <div class="pseg done"    style="background:var(--s4)"></div>
+      <div class="pseg done"    style="background:var(--s5)"></div>
+      <div class="pseg current" style="background:var(--accent)"></div>
+      <div class="pseg future"></div>
+      <div class="pseg future"></div>
+    </div>
+    <div class="progress-labels" aria-hidden="true">
+      <span>S1</span><span>S2</span><span>S3</span><span>S4</span><span>S5</span>
+      <span class="active-label">S6 &#9679;</span><span>S7</span><span>S8</span>
+    </div>
+  </section>
+
+  <!-- Python & Tools Section -->
+  <section class="skills-section reveal" aria-labelledby="skills-heading">
+    <div class="skills-section-header">
+      <h2 id="skills-heading">Python Ecosystem &amp; Tools</h2>
+      <p>Core Python frameworks and libraries used across projects &amp; coursework</p>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- Subject Catalogue -->
+  <section class="section-header reveal" aria-labelledby="catalogue-heading">
+    <div class="section-header-row">
+      <div>
+        <h2 id="catalogue-heading">Subject Catalogue</h2>
+        <p>Click any subject card to expand and see all units. Use the semester filters or search to focus.</p>
+      </div>
+      <button class="expand-all-btn" id="expandAllBtn" aria-label="Expand all subject cards">Expand All</button>
+    </div>
+  </section>
+
+  <div class="search-no-results" id="noResults" role="status">
+    <p>No subjects match your search. Try a different keyword.</p>
+  </div>
+
+  <div id="mainContent" role="region" aria-label="Semester subjects"></div>
+
+</div>
+</main>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="wrapper">
+    <div class="footer-inner">
+      <p>RGPV B.Tech Data Science &middot; Batch 2023&ndash;2027 &middot; <strong>Keep building. Keep learning.</strong></p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://github.com/Aryanmishra-dev" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#main-content" class="footer-link">Back to top</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   APPLICATION DATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+const semColors = ['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--s5)','var(--s6)'];
+
+const skills = [
+  { name: 'Python', desc: 'Core language', icon: '\u{1F40D}', tag: 'core' },
+  { name: 'Django', desc: 'Web framework', icon: '\u{1F310}', tag: 'framework' },
+  { name: 'Flask', desc: 'Micro framework', icon: '\u2697\uFE0F', tag: 'framework' },
+  { name: 'FastAPI', desc: 'Async REST APIs', icon: '\u26A1', tag: 'framework' },
+  { name: 'Pandas', desc: 'Data manipulation', icon: '\u{1F43C}', tag: 'lib' },
+  { name: 'NumPy', desc: 'Numerical computing', icon: '\u{1F522}', tag: 'lib' },
+  { name: 'Scikit-learn', desc: 'Machine learning', icon: '\u{1F9E0}', tag: 'lib' },
+  { name: 'TensorFlow', desc: 'Deep learning', icon: '\u{1F52C}', tag: 'lib' },
+  { name: 'PyTorch', desc: 'Neural networks', icon: '\u{1F525}', tag: 'lib' },
+  { name: 'Matplotlib', desc: 'Visualization', icon: '\u{1F4CA}', tag: 'lib' },
+  { name: 'Streamlit', desc: 'Data apps', icon: '\u{1F680}', tag: 'framework' },
+  { name: 'SQLAlchemy', desc: 'ORM & databases', icon: '\u{1F5C4}\uFE0F', tag: 'lib' },
+];
+
+const data = [
+  { sem:1, label:"First Semester", status:"complete",
+    subjects:[
+      { title:"Mathematics \u2013 I", icon:"\u2211", units:[
+          "Differential Calculus \u2014 Limits, continuity, differentiation, partial derivatives",
+          "Applications of Derivatives \u2014 Maxima & minima, curvature, mean value theorem",
+          "Integral Calculus \u2014 Definite & indefinite integrals, Beta & Gamma functions",
+          "Multiple Integrals \u2014 Double & triple integration",
+          "Differential Equations \u2014 First order, higher order linear DEs"]},
+      { title:"Physics", icon:"\u269B\uFE0F", units:[
+          "Wave Optics \u2014 Interference, diffraction, polarization",
+          "Quantum Physics \u2014 Schr\u00F6dinger equation, wave function",
+          "Semiconductor Physics \u2014 PN junction, diode, transistor",
+          "Laser & Fiber Optics",
+          "Modern Physics Applications"]},
+      { title:"Civil Engineering", icon:"\u{1F3D7}\uFE0F", units:[
+          "Building Materials","Construction Technology","Surveying",
+          "Environmental Engineering","Transportation Engineering"]},
+      { title:"Basic Computer Engineering", icon:"\u{1F4BB}", units:[
+          "Computer Fundamentals","Number Systems & Logic Gates",
+          "Hardware & Software Concepts","Operating System Basics",
+          "Programming Fundamentals (C basics)"]},
+      { title:"English for Communication", icon:"\u270D\uFE0F", units:[
+          "Grammar Basics","Technical Writing","Communication Skills",
+          "Presentation Skills","Business Communication"]}
+    ]},
+  { sem:2, label:"Second Semester", status:"complete",
+    subjects:[
+      { title:"Mathematics \u2013 II", icon:"\u222B", units:[
+          "Matrices & Linear Algebra","Vector Calculus","Laplace Transform",
+          "Fourier Series","Complex Variables"]},
+      { title:"Mechanical Engineering", icon:"\u2699\uFE0F", units:[
+          "Thermodynamics","IC Engines","Refrigeration & Air Conditioning",
+          "Manufacturing Processes","Engineering Mechanics"]},
+      { title:"Chemistry", icon:"\u{1F9EA}", units:[
+          "Water Chemistry","Polymers","Corrosion","Spectroscopy","Nanomaterials"]},
+      { title:"BEEE \u2014 Basic Electrical & Electronics", icon:"\u26A1", units:[
+          "DC Circuits","AC Circuits","Transformers","Electrical Machines","Basic Electronics"]},
+      { title:"Engineering Drawing", icon:"\u{1F4D0}", units:[
+          "Projection of Points & Lines","Planes","Solids",
+          "Isometric Projection","Section of Solids"]}
+    ]},
+  { sem:3, label:"Third Semester", status:"complete",
+    subjects:[
+      { title:"Data Structures & Algorithms", icon:"\u{1F332}", units:[
+          "Arrays & Linked List","Stack & Queue","Trees","Graphs",
+          "Searching & Sorting Algorithms"]},
+      { title:"Object Oriented Programming (C++/Java)", icon:"\u{1F9F1}", units:[
+          "OOP Concepts","Classes & Objects","Inheritance",
+          "Polymorphism","Exception Handling & File Handling"]},
+      { title:"Database Management System", icon:"\u{1F5C4}\uFE0F", units:[
+          "ER Model","Relational Model","SQL","Normalization",
+          "Transactions & Concurrency"]},
+      { title:"IPS \u2014 Python Programming", icon:"\u{1F40D}", units:[
+          "Python Basics","Functions & Modules","OOP in Python",
+          "File Handling","Libraries \u2014 NumPy & Pandas basics"]},
+      { title:"Technical Communication", icon:"\u{1F4E3}", units:[
+          "Technical Writing","Reports","Resume & Interview Skills",
+          "Group Discussion","Ethics"]}
+    ]},
+  { sem:4, label:"Fourth Semester", status:"complete",
+    subjects:[
+      { title:"ADA \u2014 Analysis & Design of Algorithms", icon:"\u23F1\uFE0F", units:[
+          "Asymptotic Notations","Divide & Conquer","Greedy Method",
+          "Dynamic Programming","NP Completeness"]},
+      { title:"Discrete Mathematics", icon:"\u{1F522}", units:[
+          "Logic & Proof","Set Theory","Relations & Functions",
+          "Graph Theory","Combinatorics"]},
+      { title:"Operating System", icon:"\u{1F5A5}\uFE0F", units:[
+          "OS Concepts","Process Management","Memory Management",
+          "File System","Deadlocks"]},
+      { title:"Data Science Fundamentals", icon:"\u{1F4CA}", units:[
+          "Data Collection & Preprocessing","Statistics for Data Science",
+          "Exploratory Data Analysis","Regression & Classification","Case Studies"]},
+      { title:"Software Engineering", icon:"\u{1F6E0}\uFE0F", units:[
+          "SDLC","Requirement Engineering","Design Concepts",
+          "Testing","Maintenance & Project Management"]}
+    ]},
+  { sem:5, label:"Fifth Semester", status:"complete",
+    subjects:[
+      { title:"TOC \u2014 Theory of Computation", icon:"\u{1F916}", units:[
+          "Finite Automata","Regular Expressions","Context Free Grammar",
+          "Pushdown Automata","Turing Machine"]},
+      { title:"COA \u2014 Computer Organization & Architecture", icon:"\u{1F50C}", units:[
+          "Basic Computer Organization","CPU Architecture",
+          "Memory Organization","I/O Organization","Pipelining"]},
+      { title:"Machine Learning", icon:"\u{1F9E0}", units:[
+          "Introduction to ML","Supervised Learning","Unsupervised Learning",
+          "Model Evaluation","Advanced ML Concepts"]},
+      { title:"DMDW \u2014 Data Mining & Data Warehousing", icon:"\u26CF\uFE0F", units:[
+          "Data Warehouse Concepts","OLAP","Association Rules","Classification","Clustering"]}
+    ]},
+  { sem:6, label:"Sixth Semester", status:"current",
+    subjects:[
+      { title:"Deep Learning", icon:"\u{1F52C}", units:[
+          "Neural Networks","Backpropagation",
+          "Convolutional Neural Networks (CNN)","RNN & LSTM",
+          "Optimization & Regularization"]},
+      { title:"NLP \u2014 Natural Language Processing", icon:"\u{1F4AC}", units:[
+          "Text Preprocessing","N-grams & Language Models",
+          "Word Embeddings","Transformers","NLP Applications"]},
+      { title:"Computer Networks", icon:"\u{1F310}", units:[
+          "OSI & TCP/IP Model","Physical & Data Link Layer",
+          "Network Layer","Transport Layer","Application Layer"]},
+      { title:"Big Data Analytics", icon:"\u{1F5C2}\uFE0F", units:[
+          "Big Data Concepts","Hadoop Ecosystem",
+          "MapReduce","Apache Spark","NoSQL Databases"]}
+    ]}
+];
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   RENDERING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+function buildSkills() {
+  const grid = document.getElementById('skillsGrid');
+  grid.innerHTML = skills.map(s => `
+    <div class="skill-card">
+      <div class="skill-icon" aria-hidden="true">${s.icon}</div>
+      <div class="skill-info">
+        <div class="skill-name">${s.name}</div>
+        <div class="skill-desc">${s.desc}</div>
+      </div>
+      <span class="skill-tag ${s.tag}">${s.tag}</span>
+    </div>
+  `).join('');
+}
+
+function buildContent() {
+  const container = document.getElementById('mainContent');
+  let html = '';
+  data.forEach((s, idx) => {
+    const color = semColors[idx];
+    const isCurrentSem = s.status === 'current';
+    html += `
+    <div class="semester-block reveal" data-sem="${s.sem}">
+      <div class="sem-row">
+        <div class="sem-index">SEM ${String(s.sem).padStart(2,'0')}</div>
+        <div class="sem-line" style="background:${color}" aria-hidden="true"></div>
+        <div class="sem-info">
+          <h3>${s.label}</h3>
+          <div class="sem-meta">${s.subjects.length} subjects &nbsp;\u00B7&nbsp; ${s.subjects.reduce((a, sub) => a + sub.units.length, 0)} units</div>
+        </div>
+        <div class="sem-status ${s.status}">${isCurrentSem ? 'In Progress' : 'Complete'}</div>
+      </div>
+      <div class="subjects-grid">
+        ${s.subjects.map(sub => `
+          <article class="subject-card" style="--card-accent:${color}"
+                   tabindex="0" role="button"
+                   aria-expanded="false"
+                   aria-label="${sub.title} \u2014 ${sub.units.length} units"
+                   data-title="${sub.title.toLowerCase()}"
+                   data-units="${sub.units.join('|').toLowerCase()}">
+            <div class="card-accent-bar" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-icon-wrap" aria-hidden="true">${sub.icon}</div>
+                <div class="card-title">${sub.title}</div>
+              </div>
+              <div class="card-units-count">${sub.units.length} Units covered</div>
+              <div class="expand-row" aria-hidden="true">
+                <span class="btn-label">View Units</span>
+                <span class="chevron">\u2193</span>
+              </div>
+            </div>
+            <div class="units-list" role="region" aria-label="${sub.title} units">
+              ${sub.units.map((u, i) => `
+                <div class="unit-item">
+                  <div class="unit-dot" aria-hidden="true"></div>
+                  <div>
+                    <div class="unit-label">Unit ${i + 1}</div>
+                    <div class="unit-text">${u}</div>
+                  </div>
+                </div>`).join('')}
+            </div>
+          </article>`).join('')}
+      </div>
+    </div>`;
+  });
+  container.innerHTML = html;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   INTERACTIONS (Event Delegation — zero inline handlers)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+function toggleCard(card) {
+  const list = card.querySelector('.units-list');
+  const label = card.querySelector('.btn-label');
+  const isOpen = card.classList.toggle('expanded');
+  list.classList.toggle('open', isOpen);
+  label.textContent = isOpen ? 'Collapse' : 'View Units';
+  card.setAttribute('aria-expanded', String(isOpen));
+}
+
+// Event delegation for subject cards (click + keyboard)
+document.getElementById('mainContent').addEventListener('click', function(e) {
+  var card = e.target.closest('.subject-card');
+  if (card) toggleCard(card);
+});
+
+document.getElementById('mainContent').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    var card = e.target.closest('.subject-card');
+    if (card) { e.preventDefault(); toggleCard(card); }
+  }
+});
+
+// Semester filter (event delegation on nav-pills)
+document.querySelector('.nav-pills').addEventListener('click', function(e) {
+  var pill = e.target.closest('.nav-pill');
+  if (!pill) return;
+
+  var sem = pill.dataset.sem;
+  document.querySelectorAll('.nav-pill').forEach(function(b) {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
+  pill.classList.add('active');
+  pill.setAttribute('aria-selected', 'true');
+
+  document.querySelectorAll('.semester-block').forEach(function(block) {
+    block.classList.toggle('hidden', sem !== 'all' && block.dataset.sem !== sem);
+  });
+
+  // Clear search when switching semesters
+  var si = document.getElementById('searchInput');
+  if (si.value) {
+    si.value = '';
+    clearSearch();
+  }
+});
+
+// Expand All / Collapse All
+var allExpanded = false;
+document.getElementById('expandAllBtn').addEventListener('click', function() {
+  allExpanded = !allExpanded;
+  var btn = document.getElementById('expandAllBtn');
+  btn.textContent = allExpanded ? 'Collapse All' : 'Expand All';
+
+  document.querySelectorAll('.subject-card:not(.search-hidden)').forEach(function(card) {
+    var list = card.querySelector('.units-list');
+    var label = card.querySelector('.btn-label');
+    if (allExpanded) {
+      card.classList.add('expanded');
+      list.classList.add('open');
+      label.textContent = 'Collapse';
+      card.setAttribute('aria-expanded', 'true');
+    } else {
+      card.classList.remove('expanded');
+      list.classList.remove('open');
+      label.textContent = 'View Units';
+      card.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SEARCH (debounced, accessible)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+var searchInput = document.getElementById('searchInput');
+var searchClear = document.getElementById('searchClear');
+var searchKbd = document.getElementById('searchKbd');
+var noResults = document.getElementById('noResults');
+
+function clearSearch() {
+  document.querySelectorAll('.subject-card').forEach(function(card) {
+    card.classList.remove('search-hidden', 'search-highlight');
+  });
+  var activeSem = document.querySelector('.nav-pill.active');
+  var sem = activeSem ? activeSem.dataset.sem : 'all';
+  document.querySelectorAll('.semester-block').forEach(function(block) {
+    block.style.display = '';
+    block.classList.toggle('hidden', sem !== 'all' && block.dataset.sem !== sem);
+  });
+  noResults.classList.remove('visible');
+  searchClear.classList.remove('visible');
+  searchKbd.classList.remove('hidden');
+}
+
+function performSearch(query) {
+  if (!query.trim()) { clearSearch(); return; }
+
+  searchClear.classList.add('visible');
+  searchKbd.classList.add('hidden');
+  var q = query.toLowerCase().trim();
+  var matchCount = 0;
+
+  // Show all semesters during search
+  document.querySelectorAll('.semester-block').forEach(function(b) {
+    b.classList.remove('hidden');
+    b.style.display = '';
+  });
+
+  document.querySelectorAll('.subject-card').forEach(function(card) {
+    var title = card.dataset.title || '';
+    var units = card.dataset.units || '';
+    var matches = title.indexOf(q) !== -1 || units.indexOf(q) !== -1;
+    card.classList.toggle('search-hidden', !matches);
+    card.classList.toggle('search-highlight', matches);
+    if (matches) matchCount++;
+  });
+
+  // Hide semester blocks with no visible cards
+  document.querySelectorAll('.semester-block').forEach(function(block) {
+    var visibleCards = block.querySelectorAll('.subject-card:not(.search-hidden)');
+    if (visibleCards.length === 0) block.style.display = 'none';
+  });
+
+  noResults.classList.toggle('visible', matchCount === 0);
+}
+
+var searchTimer;
+searchInput.addEventListener('input', function(e) {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(function() { performSearch(e.target.value); }, 200);
+});
+
+searchInput.addEventListener('focus', function() { searchKbd.classList.add('hidden'); });
+searchInput.addEventListener('blur', function() {
+  if (!searchInput.value) searchKbd.classList.remove('hidden');
+});
+
+searchClear.addEventListener('click', function() {
+  searchInput.value = '';
+  clearSearch();
+  searchInput.focus();
+});
+
+// Keyboard shortcut: Ctrl/Cmd + K to focus search
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  }
+});
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ANIMATED COUNTERS (trigger on scroll)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+function animateCounter(el, target, suffix, duration) {
+  suffix = suffix || '';
+  duration = duration || 1200;
+  var start = performance.now();
+  var numTarget = parseInt(target, 10);
+
+  function tick(now) {
+    var elapsed = now - start;
+    var progress = Math.min(elapsed / duration, 1);
+    var eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(numTarget * eased) + suffix;
+    if (progress < 1) requestAnimationFrame(tick);
+  }
+
+  if (!isNaN(numTarget)) requestAnimationFrame(tick);
+  else el.textContent = target + suffix;
+}
+
+function triggerCounters() {
+  var completeSemesters = data.filter(function(s) { return s.status === 'complete'; }).length;
+  var totalSubjects = data.reduce(function(a, s) { return a + s.subjects.length; }, 0);
+  var totalUnits = data.reduce(function(a, s) {
+    return a + s.subjects.reduce(function(b, sub) { return b + sub.units.length; }, 0);
+  }, 0);
+  var progress = Math.round((data.length / 8) * 100);
+
+  animateCounter(document.getElementById('stat-semesters'), completeSemesters);
+  animateCounter(document.getElementById('stat-subjects'), totalSubjects);
+  animateCounter(document.getElementById('stat-units'), totalUnits);
+  animateCounter(document.getElementById('stat-progress'), progress, '%');
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SCROLL REVEAL (IntersectionObserver)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+var countersTriggered = false;
+
+function initScrollReveal() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+
+        // Trigger counters when stats row becomes visible
+        if (entry.target.classList.contains('stats-row') && !countersTriggered) {
+          countersTriggered = true;
+          triggerCounters();
+        }
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BACK TO TOP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+var backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', function() {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   INIT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+buildSkills();
+buildContent();
+initScrollReveal();
+</script>
+</body>
+</html>

@@ -4,7 +4,6 @@ A single-page, static website that showcases my B.Tech Data Science curriculum (
 
 ## Preview
 
-- Live demo: https://aryanmishra-dev.github.io/BTech-Subjects-/
 - Local preview: open `index.html` in a browser
 
 ## Purpose

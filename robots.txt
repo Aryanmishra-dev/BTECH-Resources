@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aryanmishra-dev.github.io/BTech-Subjects-/sitemap.xml

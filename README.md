@@ -4,7 +4,8 @@ A single-page, static website that showcases my B.Tech Data Science curriculum (
 
 ## Preview
 
-- Local preview: open `index.html` in a browser
+- **Live:** https://btech-resources.vercel.app/
+- **Local:** open `index.html` in a browser
 
 ## Purpose
 
